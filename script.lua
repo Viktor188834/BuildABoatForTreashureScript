@@ -94,7 +94,6 @@ ButtonAutoFarm.Name = "AutoFarm"
 ButtonAutoFarm.Text = "On/Off AutoFarm"
 ButtonAutoFarm.Size = UDim2.new(0.5, 0, 0.5, 0)
 ButtonAutoFarm.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-ButtonAutoFarm.BorderSizePixel = 0
 local SpeedButton = Instance.new("TextButton")
 SpeedButton.Parent = Frame
 SpeedButton.Name = "AutoFarm"
@@ -102,7 +101,6 @@ SpeedButton.Text = "Speed Coil"
 SpeedButton.Size = UDim2.new(0.5, 0, 0.5, 0)
 SpeedButton.Position = UDim2.new(0.5, 0, 0, 0)
 SpeedButton.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
-SpeedButton.BorderSizePixel = 0
 local buttonminus = Instance.new("TextButton")
 buttonminus.Parent = Frame
 buttonminus.Name = "buttonminus"
@@ -111,7 +109,6 @@ buttonminus.Size = UDim2.new(0.2, 0, 0.2, 0)
 buttonminus.Position = UDim2.new(0.8, 0, 0.6, 0)
 buttonminus.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
 buttonminus.TextSize = 14
-buttonminus.BorderSizePixel = 0
 local buttonplus = Instance.new("TextButton")
 buttonplus.Parent = Frame
 buttonplus.Name = "buttonplus"
@@ -120,7 +117,6 @@ buttonplus.Size = UDim2.new(0.2, 0, 0.2, 0)
 buttonplus.Position = UDim2.new(0.8, 0, 0.8, 0)
 buttonplus.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
 buttonplus.TextSize = 12
-buttonplus.BorderSizePixel = 0
 local text = Instance.new("TextLabel")
 text.Parent = Frame
 text.Name = "Text"
@@ -140,9 +136,7 @@ Delete.Size = UDim2.new(0.5, 0, 0.1, 0)
 Delete.Position = UDim2.new(0.5, 0, 0.5, 0)
 Delete.BackgroundColor3 = Color3.fromRGB(255, 10, 10)
 Delete.TextSize = 8
-Delete.BorderSizePixel = 0
 function Deleteall()
-	w.Parent = workspace.BoatStages
 	print("auto farm is offline")
 	auto = 0
 	part1:Destroy()
@@ -156,6 +150,7 @@ function Deleteall()
 	part9:Destroy()
 	part10:Destroy()
 	gui:Destroy()
+	w.Parent = workspace.BoatStages
 end
 
 local text1 = Instance.new("TextLabel")
