@@ -247,6 +247,6 @@ while wait() do
 		hrp.CFrame = part10.CFrame + Vector3.new(0, 3, 0)
 		wait(3)
 		part10.CanCollide = false
-		wait(7)
+		wait(5)
 	end
 end
