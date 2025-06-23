@@ -156,7 +156,7 @@ end
 local text1 = Instance.new("TextLabel")
 text1.Parent = Frame
 text1.Name = "Text"
-text1.Text = "gold: "..golrn.Value.."💰"
+text1.Text = "Gold Right Now: "..golrn.Value.."💰"
 text1.BackgroundTransparency = 1
 text1.Position = UDim2.new(0.3, 0, 0.8, 0)
 text1.TextSize = 6
@@ -164,7 +164,7 @@ text1.TextColor3 = Color3.fromRGB(255, 255, 0)
 local text2 = Instance.new("TextLabel")
 text2.Parent = Frame
 text2.Name = "Text"
-text2.Text = "gold earned: "..golrn.Value - goldBefore.."💰"
+text2.Text = "Gold Earned: "..golrn.Value - goldBefore.."💰"
 text2.BackgroundTransparency = 1
 text2.Position = UDim2.new(0.25, 0, 0.65, 0)
 text2.TextSize = 7
@@ -202,11 +202,6 @@ function autoSelect()
 	end
 end
 
-function giveCoil()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/Client-Things/main/Speed%20Coil'),true))() -- Speed Coil
-end
-
-SpeedButton.MouseButton1Click:Connect(giveCoil)
 Delete.MouseButton1Click:Connect(Deleteall)
 ButtonAutoFarm.MouseButton1Click:Connect(autoSelect)
 buttonplus.MouseButton1Click:Connect(plus)
@@ -220,8 +215,9 @@ coroutine.wrap(function()
 			local hrp = plr.HumanoidRootPart
 			golrn = player.Data.Gold
 			warn("Go for farm!")
-			print("Gold Right Now: "..golrn.Value.."💰")
-			print("gold earned using script: "..golrn.Value - goldBefore.."💰")
+			print("Gold Right Now:                              												      "..golrn.Value.."💰")
+			print(" ")
+			print("Gold Earned:                              												      "..golrn.Value - goldBefore.."💰")
 			part10.CanCollide = true
 			hrp.CFrame = part1.CFrame + Vector3.new(0, 3, 0)
 			wait(3)
