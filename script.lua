@@ -250,3 +250,43 @@ while wait() do
 		wait(5)
 	end
 end
+coroutine.wrap(function()
+	while true do
+		if auto == 1 then
+			local player = game:FindService("Players").LocalPlayer
+			local plr = player.Character
+			local hrp = plr.HumanoidRootPart
+			golrn = player.Data.Gold
+			warn("Go for farm!")
+			print("Gold Right Now: "..golrn.Value.."💰")
+			print("gold earned using script: "..golrn.Value - goldBefore.."💰")
+			part10.CanCollide = true
+			hrp.CFrame = part1.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part2.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part3.CFrame + Vector3.new(0, 3, 0)
+			text1.Text = "gold: "..golrn.Value.."💰"
+			text2.Text = "gold earned: "..golrn.Value - goldBefore.."💰"
+			wait(3)
+			hrp.CFrame = part4.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part5.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part6.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = CFrame.new(-53, -357, 9488)
+			wait(1)
+			hrp.CFrame = part7.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part8.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part9.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			hrp.CFrame = part10.CFrame + Vector3.new(0, 3, 0)
+			wait(3)
+			part10.CanCollide = false
+		end
+		wait(5)
+	end
+end)()
