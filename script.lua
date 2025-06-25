@@ -245,6 +245,6 @@ coroutine.wrap(function()
 			wait(4)
 			part10.CanCollide = false
 		end
-		wait(5)
+		wait(2)
 	end
 end)()
