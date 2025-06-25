@@ -185,13 +185,7 @@ function minus()
 end
 
 function autoSelect()
-	if auto == 1 then
-		print("auto farm is offline")
-		auto = 0
-		ButtonAutoFarm.Text = "Off AutoFarm"
-		ButtonAutoFarm.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-		w.Parent = workspace.BoatStages
-	else
+	if auto == 0 then
 		print("auto farm is online")
 		auto = 1
 		ButtonAutoFarm.Text = "On AutoFarm"
@@ -199,6 +193,12 @@ function autoSelect()
 		local w = workspace.BoatStages.OtherStages
 		w.Parent = game:GetService("ReplicatedStorage")
 		w.Name = "OtherStages"
+	else
+		print("auto farm is offline")
+		auto = 0
+		ButtonAutoFarm.Text = "Off AutoFarm"
+		ButtonAutoFarm.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		w.Parent = workspace.BoatStages
 	end
 end
 
